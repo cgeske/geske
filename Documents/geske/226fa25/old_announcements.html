@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<title>Math [coursenumber]</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<style>
+table{
+  border-collapse: collapse;
+}
+th {
+  font-weight: normal;
+
+  border-bottom:1pt solid black;
+}
+th, td {
+  font-size: 15px;
+  padding: 5px;
+  text-align:left;
+}
+</style>
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-theme w3-card w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-padding-large w3-large w3-right w3-theme-l1" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="main.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Back</a>
+    </div>
+
+
+    <!-- Navbar on small screens
+    <div id="navDemo" class="w3-bar-block w3-white w3-theme w3-hide w3-hide-large w3-hide-medium w3-large">
+      <a href="main.html" class="w3-bar-item w3-button w3-padding-large">Back</a>
+    </div> -->
+
+  </div>
+
+
+
+<!-- Sidebar -->
+<!-- <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Math [coursenumber]</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#top">Top</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#announcements">Announcements</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#officehours">Office Hours</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#dailyschedule">Daily Schedule</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#homeworkguidelines">Homework Guidelines</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#syllabus">Syllabus</a>
+  <a target="_blank" rel="noopener noreferrer"  class="w3-bar-item w3-button w3-hover-black" href="[discussionlink]">Discussion Handouts</a>
+  <a target="_blank" rel="noopener noreferrer" class="w3-bar-item w3-button w3-hover-black" href="https://www.myopenmath.com">MyOpenMath</a>
+  <a target="_blank" rel="noopener noreferrer" class="w3-bar-item w3-button w3-hover-black" href="https://www.gradescope.com">Gradescope</a>
+  <a target="_blank" rel="noopener noreferrer" class="w3-bar-item w3-button w3-hover-black" href="https://brightspace.usc.edu">Brightspace</a>
+</nav> -->
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<!-- <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div> -->
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main">
+
+    <div class="w3-container w3-padding-32" id="announcements">
+      <h3 class="w3-text-teal">Old Announcements</h3>
+      <p>
+<!-- Public Old -->
+
+<h5 class="w3-text-teal"> Is this old? </h5>
+<p>
+Welcome! 
+This is your Math 226 instructor Prof Geske!
+I  would like you to kindly do the following prior to your first lecture.
+<ul>
+    <li>
+        Access the <a href="" target = "blank" rel = "noopener">course webpage</a> and read through it.
+        Almost all of the course content, including the syllabus, is found at this webpage.
+        I will not discuss the syllabus in great detail during lecture, but will be happy to answer questions about it, so do read thorough it first.
+    </li>
+    <li>
+        Verify that you do not have any conflicts with the assigned exam dates. 
+        Email me immediately if you do!
+    </li>
+    <li>
+        Only if you require testing accomodations: initiate your registration with <a href = "https://osas.usc.edu/">OSAS</a>. 
+    </li>
+    <li>
+        Access the Lecture 1 handout in the <a href="" target = "blank" rel = "noopener">Daily Schedule</a> on the course webpage.
+    </li>
+     <li>
+        Access <a href="https://brightspace.usc.edu/" target = "blank" rel = "noopener">Brightspace</a> and find our course page.
+        Click the Gradescope tab and sign up.
+        Gradescope is how you will submit your homework for grading.
+        Besides this instance, we will use Brightspace very rarely.
+    </li>
+</ul> 
+</p>
+<p>
+    <em>Sent: Sun May 18 </em>
+</p> 
+
+</p>
+    </div>
+<!-- END MAIN -->
+</div>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+
+</body>
+</html>
