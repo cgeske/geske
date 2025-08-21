@@ -1,0 +1,283 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+
+<!-- show description button -->
+<script>
+    function toggle_description(div_id) {
+      var x = document.getElementById(div_id);
+      var btnText = document.getElementById(div_id+"btn");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+</script>
+
+<title>Undergraduate Focused Talks</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<style>
+table{
+  border-collapse: collapse;
+}
+th {
+  font-weight: normal;
+
+  border-bottom:1pt solid black;
+}
+th, td {
+  font-size: 15px;
+  padding: 5px;
+  text-align:left;
+}
+</style>
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-theme w3-card w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-padding-large w3-large w3-right w3-theme-l1" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Home</a>
+      <a href="teaching.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Teaching</a>
+      <a href="research.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Research</a>
+      <a href="misc.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Miscellaneous</a>
+      <a href="undergrad_focused_talks.html" class="w3-bar-item w3-button w3-theme-l1">Undergrad Focused Talks</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-theme w3-hide w3-hide-large w3-hide-medium w3-large">
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+        <a href="teaching.html" class="w3-bar-item w3-button w3-padding-large">Teaching</a>
+        <a href="research.html" class="w3-bar-item w3-button w3-padding-large">Research</a>
+        <a href="misc.html" class="w3-bar-item w3-button w3-padding-large">Miscellaneous</a>
+    </div>
+
+  </div>
+
+
+<!-- Sidebar
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
+</nav>-->
+
+<!-- Overlay effect when opening sidebar on small screens
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>-->
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible
+<div class="w3-main" style="margin-left:250px">-->
+  <div class="w3-row w3-padding-64">
+    <div class="w3-container">
+    <h3 class="w3-text-teal">Undergrad Focused Talks at USC</h3>
+    <h6> The regular seminars in the Mathematics Department will occasionally run talks geared towards an undergraduate audience. 
+      Those seminars will be advertised here. 
+      If you are an undergraduate hoping for more exposure to mathematics and mathematicians, then these talks are great options to attend.
+    </h6>
+    
+    <h3 class="w3-text-teal">Fa25 Undergraduate Focused Talks</h3>
+    
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: left;">
+      <th>Seminar</th>
+      <th>Date</th>
+      <th>Time</th>
+      <th>Location</th>
+      <th>Presenter</th>
+      <th>Institution</th>
+      <th>Title</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href = 'https://sites.google.com/view/uscmatheducationseminar/home'>Math Education Seminar</a></td>
+      <td>Mon Oct 27</td>
+      <td>4:30-5:30pm</td>
+      <td>KAP 427</td>
+      <td>James Owen Weatherall</td>
+      <td>UC Irvine</td>
+      <td>TBA</td>
+      <td><small><button class="w3-button w3-black" onclick="toggle_description('current0')" id='current0btn'>Toggle Description</button></small><div style = "display:none" id='current0'>TBA</div></td>
+    </tr>
+  </tbody>
+</table>
+
+    <h3 class="w3-text-teal"> Past Undergraduate Focused Talks</h3>
+    
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: left;">
+      <th>Seminar</th>
+      <th>Semester</th>
+      <th>Date</th>
+      <th>Presenter</th>
+      <th>Institution</th>
+      <th>Title</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href = 'https://sites.google.com/view/uscmatheducationseminar/home'>Math Education Seminar</a></td>
+      <td>Sp25</td>
+      <td>Mon Apr 21</td>
+      <td>Jemma Lorenat</td>
+      <td>Pitzer College</td>
+      <td>Statistics in 1899: Alice Lee and the theory of correlations</td>
+      <td><small><button class="w3-button w3-black" onclick="toggle_description('past0')" id='past0btn'>Toggle Description</button></small><div style = "display:none" id='past0'>This talk centers on the first (and perhaps only) doctorate in the theory of correlations --- granted by University College London in 1899 to Alice Lee. The production, reception, and subsequent applications of Lee's research clarify the aims of biometricians, the perceived legitimacy of arguments based on regression analysis (by those who did and did not understand the mathematics), and ways in which bias was measured and assessed.</div></td>
+    </tr>
+    <tr>
+      <td><a href = 'https://www.instagram.com/uscmathclub?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='>The USC Math Club</a></td>
+      <td>Sp25</td>
+      <td>Mon Feb 24</td>
+      <td>Spencer Gerhardt</td>
+      <td>USC</td>
+      <td>Some Mathematical Background to Minimalism</td>
+      <td><small><button class="w3-button w3-black" onclick="toggle_description('past1')" id='past1btn'>Toggle Description</button></small><div style = "display:none" id='past1'>In this talk, we trace the development of musical minimalism in the early 1960s through its interactions with mathematicians and mathematical ideas. We also discuss some related notions of continuity and construction appearing across math, art, and musical minimalism.</div></td>
+    </tr>
+    <tr>
+      <td><a href = 'https://sites.google.com/view/uscmatheducationseminar/home'>Math Education Seminar</a></td>
+      <td>Sp25</td>
+      <td>Mon Feb 10</td>
+      <td>Jesse Wolfson</td>
+      <td>UC Irvine</td>
+      <td>Fractals in Africanist Music</td>
+      <td><small><button class="w3-button w3-black" onclick="toggle_description('past2')" id='past2btn'>Toggle Description</button></small><div style = "display:none" id='past2'>Symmetry has been a structuring device and motif for music in many cultures, and probably everyone who has taken music lessons as a child can call to mind the time translation symmetry encoded by the regular beats of a metronome. Nonetheless, the idea of fractal symmetry in music seems much less common. In this talk, I'll describe recent research investigating the presence of fractal structures in Africanist music, in response to a hypothesis of choreographer Reggie Wilson. I'll describe both the project and "scientific" findings, as well as the broader context of my unexpected and ongoing engagement with Reggie Wilson and his Fist and Heel Performance Group at the interplay of math and dance. This is joint work with Claudio Gómez-Gonzáles, Sidhanth Raman and Siddharth Viswanath.</div></td>
+    </tr>
+    <tr>
+      <td><a href = 'https://dornsife.usc.edu/probability-and-statistics-seminars/'>Probability and Statistics Seminar</a></td>
+      <td>Fa23</td>
+      <td>Fri Nov 17</td>
+      <td>Peter Kagey</td>
+      <td>Harvey Mudd College</td>
+      <td>Expected value of letters of permutations with a given number of \(k\)-cycles</td>
+      <td><small><button class="w3-button w3-black" onclick="toggle_description('past3')" id='past3btn'>Toggle Description</button></small><div style = "display:none" id='past3'>The probability that a uniformly random permutation on \(2n\) letters has exactly \(\alpha\) transpositions is equal to the probability that a uniformly random isometry of the \(n\)-cube has exactly \(\alpha\) pairs of faces that are fixed. In this talk, I will describe generalizations of this relationship, show how this gives information about the expected value of letters of permutations with a given number of \(k\)-cycles, and propose several open questions related to families of permutation statistics.</div></td>
+    </tr>
+    <tr>
+      <td><a href = 'https://sites.google.com/view/uscmatheducationseminar/home'>Math Education Seminar</a></td>
+      <td>Fa23</td>
+      <td>Mon Nov 13</td>
+      <td>Philip Ording</td>
+      <td>Pratt Institute</td>
+      <td>Geometry for Artists: Max Dehn at Black Mountain College</td>
+      <td><small><button class="w3-button w3-black" onclick="toggle_description('past4')" id='past4btn'>Toggle Description</button></small><div style = "display:none" id='past4'>This talk will present joint research with Brenda Danilowitz on Geometry for Artists, a workshop that Max Dehn developed in the late 1940s at Black Mountain College in North Carolina. An unusual blend of projective and descriptive geometries, the course reflected the experimental college’s avant-garde late modernist legacy as well as Dehn’s ongoing philosophical investigations into the common roots of mathematics and ornamentation.</div></td>
+    </tr>
+    <tr>
+      <td><a href = 'https://dornsife.usc.edu/combinatorics/'>Combinatorics Seminar</a></td>
+      <td>Fa23</td>
+      <td>Mon Nov 13</td>
+      <td>Art Benjamin</td>
+      <td>Harvey Mudd College</td>
+      <td>Counting on Students: Combinatorics with Undergraduates</td>
+      <td><small><button class="w3-button w3-black" onclick="toggle_description('past5')" id='past5btn'>Toggle Description</button></small><div style = "display:none" id='past5'>Some of my favorite combinatorial proofs have been discovered with undergraduates. We'll present clever counting arguments and beautiful bijections involving binomial coefficients, squares, cubes, and Fibonacci numbers.</div></td>
+    </tr>
+    <tr>
+      <td><a href = 'https://ikukavica.dreamhosters.com/graduate_seminar.html'>Analysis and PDE Seminar</a></td>
+      <td>Fa23</td>
+      <td>Wed Oct 25</td>
+      <td>Elizabeth Carlson</td>
+      <td>Caltech</td>
+      <td>You Will Be Assimilated: Using Data to Accurately Model Fluids</td>
+      <td><small><button class="w3-button w3-black" onclick="toggle_description('past6')" id='past6btn'>Toggle Description</button></small><div style = "display:none" id='past6'>Scientists and mathematicians apply the continuum hypothesis to model fluid flow, e.g. the flow of substances like air or water. Models of Newtonian fluids in the real world often result in a system of dissipative equations. In particular, these equations have an internal diffusion term that allows them to dissipate energy, but the way in which this happens in general is non-trivial and chaotic; in a word, turbulent.  As a result, for many of these systems one has exponential divergence of trajectories that start infinitesimally close to one another, making them highly unpredictable. As a result, the first challenge of many to accurately simulate turbulent flows we directly observe in the real world (like the climate) is that the initial state of our system trajectory is unknown, and guessing a good initial state has been a subject of intense study for decades. Data assimilation addresses this issue by continually incorporating observed data into the model equations. In this talk, I will discuss my work using a theoretically simple yet rigorous approach to data assimilation in order to accurately model fluid flows.</div></td>
+    </tr>
+  </tbody>
+</table>
+    
+  </div>
+  </div>
+
+
+
+<!--
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Heading</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Heading</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="w3-third w3-container">
+      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
+      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
+    </div>
+  </div>
+-->
+
+  <!-- Pagination
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#">1</a>
+      <a class="w3-button w3-hover-black" href="#">2</a>
+      <a class="w3-button w3-hover-black" href="#">3</a>
+      <a class="w3-button w3-hover-black" href="#">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">»</a>
+    </div>
+  </div>-->
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32", style = "font-size:15px">
+        <!-- &#9906; Locy 203 @ Northwestern University
+      <br> -->
+        geske (at) usc (dot) edu
+      <!-- <br>
+        &#9742; 847–467–2239 -->
+    </div>
+
+    <div class="w3-container w3-theme-l1", style = "font-size:12px">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+
+</body>
+</html>
