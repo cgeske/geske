@@ -1,0 +1,1050 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<title>Math 407</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<style>
+table{
+  border-collapse: collapse;
+}
+th {
+  font-weight: normal;
+
+  border-bottom:1pt solid black;
+}
+th, td {
+  font-size: 15px;
+  padding: 5px;
+  text-align:left;
+}
+</style>
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-theme w3-card w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-padding-large w3-large w3-right w3-theme-l1" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="../index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Home</a>
+      <a href="../teaching.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Teaching</a>
+      <a href="../research.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Research</a>
+      <a href="../misc.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Miscellaneous</a>
+      <a href="../undergrad_focused_talks.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Undergrad Focused Talks</a>
+    </div>
+
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-theme w3-hide w3-hide-large w3-hide-medium w3-large">
+      <a href="../index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+      <a href="../teaching.html" class="w3-bar-item w3-button w3-padding-large">Teaching</a>
+      <a href="../research.html" class="w3-bar-item w3-button w3-padding-large">Research</a>
+      <a href="../misc.html" class="w3-bar-item w3-button w3-padding-large">Miscellaneous</a>
+      <a href="../undergrad_focused_talks.html" class="w3-bar-item w3-button w3-padding-large">Undergrad Focused Talks</a>
+    </div>
+
+  </div>
+
+
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Math 407</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#top">Top</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#announcements">Announcements</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#officehours">Office Hours</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="formulasheet.pdf" target="_blank" rel="noopener">Exam Formula Sheet</a>
+  <!--[226fa25]<a class="w3-bar-item w3-button w3-hover-black" href="#pastexams">Past Exams</a>[226fa25]-->
+  <a class="w3-bar-item w3-button w3-hover-black" href="#dailyschedule">Daily Schedule</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#homeworkguidelines">Homework Guidelines</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#syllabus">Syllabus</a>
+  <a target="_blank" rel="noopener noreferrer" class="w3-bar-item w3-button w3-hover-black" href="https://www.myopenmath.com">MyOpenMath</a>
+  <a target="_blank" rel="noopener noreferrer" class="w3-bar-item w3-button w3-hover-black" href="https://www.gradescope.com">Gradescope</a>
+  <a target="_blank" rel="noopener noreferrer" class="w3-bar-item w3-button w3-hover-black" href="https://brightspace.usc.edu">Brightspace</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+  <div class="w3-row w3-padding-32" id="top">
+
+    <div class="w3-container ">
+    <h2 class="w3-text-teal">Math 407: Probability Theory</h3>
+      <style>
+      
+</style>
+      <p>
+        I am your instructor Prof Geske (guess-key) and am happy to welcome you to the course!
+        Please explore the course webpage.
+      </p>
+      <ul style = "list-style-type: none; margin: 0; padding: 0; overflow: hidden;">
+  <li style = "float:left;"><a style = "display: block;
+  padding: 8px;
+  background-color: #dddddd;" href="#announcements">Announcements</a></li>
+  <li style = "float:left;"><a style = "display: block;
+  padding: 8px;
+  background-color: #dddddd;" href="#officehours">Office Hours</a></li>
+  <li style = "float:left;"><a style = "display: block;
+  padding: 8px;
+  background-color: #dddddd;" href="formulasheet.pdf" target="_blank" rel="noopener">Exam Formula Sheet</a></li>
+  <!--[226fa25]<li style = "float:left;"><a style = "display: block;
+  padding: 8px;
+  background-color: #dddddd;" href="#pastexams">Past Exams</a></li>[226fa25]-->
+  <li style = "float:left;"><a style = "display: block;
+  padding: 8px;
+  background-color: #dddddd;" href="#dailyschedule">Daily Schedule</a></li>
+  <li style = "float:left;"><a style = "display: block;
+  padding: 8px;
+  background-color: #dddddd;" href="#homeworkguidelines">Homework Guidelines</a></li>
+  <li style = "float:left;"><a style = "display: block;
+  padding: 8px;
+  background-color: #dddddd;" href="#syllabus">Syllabus</a></li>
+  <li style = "float:left;"><a style = "display: block;
+  padding: 8px;
+  background-color: #dddddd;" target="_blank" rel="noopener noreferrer" href="https://www.myopenmath.com">MyOpenMath</a></li>
+  <li style = "float:left;"><a style = "display: block;
+  padding: 8px;
+  background-color: #dddddd;" target="_blank" rel="noopener noreferrer" href="https://www.gradescope.com">Gradescope</a></li>
+  <li style = "float:left;"><a style = "display: block;
+  padding: 8px;
+  background-color: #dddddd;" target="_blank" rel="noopener noreferrer" href="https://brightspace.usc.edu">Brightspace</a></li>
+</ul>
+    </div>
+
+    <div class="w3-container w3-padding-32" id="announcements">
+      <h3 class="w3-text-teal">Announcements</h3>
+      <p>
+<!-- Public New (will be emailed when daily_email is run if sent is listed as now inside square-brackets [])-->
+
+<h5 class="w3-text-teal">Test</h5>
+<p>
+    Test.
+</p>
+<p>
+    <em>sent: not emailed</em>
+</p> 
+
+</p>
+      <p style = "display: block;
+  padding: 8px;
+  background-color: #dddddd;">&#9758; <a href = "old_announcements.html">Old Announcements</a></p>
+    </div>
+
+      <div class="w3-container w3-padding-32" id="officehours">
+      <h3 class="w3-text-teal">Office Hours</h3>
+      <p><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: left;">
+      <th>Instructor</th>
+      <th>Email</th>
+      <th>Office Hours Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Prof Geske</td>
+      <td>geske (at) usc (dot) edu</td>
+      <td>KAP 244A</td>
+    </tr>
+    <tr>
+      <td>Alex Fu</td>
+      <td>alexfu (dot) math (at) usc (dot) edu</td>
+      <td>Math Center (KAP 263)</td>
+    </tr>
+    <tr>
+      <td>Alex Clay</td>
+      <td>ajclay (at) usc (dot) edu</td>
+      <td>Math Center (KAP 263)</td>
+    </tr>
+  </tbody>
+</table></p>
+
+      <p>You are encouraged to attend the office hours of any instructor.
+      To gain the greatest advantage from office hours I recommend preparing your questions in advance.
+      If it is impossible for you to attend these office hours but would still like to meet: feel free to reach out to your instructor or TA to schedule an alternative time to meet.
+    </p>
+
+      <p><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: left;">
+      <th>Time Start</th>
+      <th>Time End</th>
+      <th>Mon</th>
+      <th>Tue</th>
+      <th>Wed</th>
+      <th>Thu</th>
+      <th>Fri</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>9AM</td>
+      <td>10AM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>10AM</td>
+      <td>11AM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>11AM</td>
+      <td>12PM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>12PM</td>
+      <td>1PM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1PM</td>
+      <td>2PM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2PM</td>
+      <td>3PM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3PM</td>
+      <td>4PM</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4PM</td>
+      <td>5PM</td>
+      <td></td>
+      <td>Geske</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5PM</td>
+      <td>6PM</td>
+      <td></td>
+      <td>Geske</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>6PM</td>
+      <td>7PM</td>
+      <td></td>
+      <td>Geske</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table></p>
+    </div>
+
+    <!-- <div class="w3-container w3-padding-32" id="formulasheet">
+      <h3 class="w3-text-teal">Exam Formula Sheet</h3>
+      <p>
+        &#9758; <a href="formulasheet.pdf" target="_blank" rel="noopener">Here</a> is the latest version of the formula sheet that you will be provided on Midterms and Retakes.
+      </p>
+    </div> -->
+
+    <!--[226fa25]<div class="w3-container w3-padding-32" id="pastexams">
+      <h3 class="w3-text-teal">Past Exams</h3>
+      <p>
+        Here are past midterms and retakes. 
+        You may use these as additional practice, but you should not use these as your only practice, as different iterations of the class emphasize, and sometimes cover, different topics.
+        In addition, the difficulty of our exams may be different than the difficulty of these exams. 
+        <ul style = "list-style-type: none; margin: 0; padding: 0; overflow: hidden;">
+          <li style = "float:left;"><a style = "display: block;
+            padding: 8px;
+            background-color: #dddddd;">Fa24:</a>
+          </li>
+          <li style = "float:left;"><a style = "display: block;
+            padding: 8px;
+            background-color: #dddddd;" href="226fa24mAsolns.pdf">Midterm A</a>
+          </li>
+          <li style = "float:left;"><a style = "display: block;
+            padding: 8px;
+            background-color: #dddddd;" href="226fa24rAsolns.pdf">Retake A</a>
+          </li>
+          <li style = "float:left;"><a style = "display: block;
+            padding: 8px;
+            background-color: #dddddd;" href="226fa24mBsolns.pdf">Midterm B</a>
+          </li>
+          <li style = "float:left;"><a style = "display: block;
+            padding: 8px;
+            background-color: #dddddd;" href="226fa24rABsolns.pdf">Retake AB</a>
+          </li>
+          <li style = "float:left;"><a style = "display: block;
+            padding: 8px;
+            background-color: #dddddd;" href="226fa24mCsolns.pdf">Midterm C</a>
+          </li>
+          <li style = "float:left;"><a style = "display: block;
+            padding: 8px;
+            background-color: #dddddd;" href="226fa24rABCsolns.pdf">Retake ABC</a>
+          </li>
+        </ul>    
+      </p>
+      <p>
+        Here is a &#9758; <a target="_blank" rel="noopener noreferrer" href="https://dornsife.usc.edu/mathcenter/resources-226/">link</a> to a collection of past common finals. 
+        Below are solutions to select past common finals. </p>
+        <ul style = "list-style-type: none; margin: 0; padding: 0; overflow: hidden;">
+          <li style = "float:left;"><a style = "display: block;
+            padding: 8px;
+            background-color: #dddddd;">Past Common Final Solutions:</a>
+          </li>
+          <li style = "float:left;"><a style = "display: block;
+            padding: 8px;
+            background-color: #dddddd;" href="commonfinals/226fa18finalsolns.pdf">Fa18</a>
+          </li>
+          <li style = "float:left;"><a style = "display: block;
+            padding: 8px;
+            background-color: #dddddd;" href="commonfinals/226sp24finalsolns.pdf">Sp24</a>
+          </li>
+          <li style = "float:left;"><a style = "display: block;
+            padding: 8px;
+            background-color: #dddddd;" href="commonfinals/226fa24finalsolns.pdf">Fa24</a>
+          </li>
+          <li style = "float:left;"><a style = "display: block;
+            padding: 8px;
+            background-color: #dddddd;" href="commonfinals/226sp25finalsolns.pdf">Sp25</a>
+          </li>
+        </ul>
+    </div>[226fa25]-->
+
+<div class="w3-container w3-padding-32" id="dailyschedule">
+
+  <h3 class="w3-text-teal">Daily Schedule</h3>
+  <p>
+    In this table you will find posted a pdf scaffold posted before each lecture, which we will fill in during class.
+    You will also find posted, after each exam, solutions to that exam.
+  </p>
+    <p><table align = "left" width = "100%" style="border: 1px solid black; border-collapse: collapse;">
+<tr style="background-color: #E5E8E8";>
+<th style = "padding: 5px; border: 1px solid black;">Monday</th>
+<th style = "padding: 5px; border: 1px solid black;">Tuesday</th>
+<th style = "padding: 5px; border: 1px solid black;">Wednesday</th>
+<th style = "padding: 5px; border: 1px solid black;">Thursday</th>
+<th>Friday</th>
+</tr>
+<tr style="vertical-align: top; ">
+<td style="padding: 5px; border: 1px solid black;">Jan 12<br><br>&#9758; <a href="407lec01A1.pdf" target="_blank" rel="noopener">Lecture 01</a> (A1)</td>
+<td style="padding: 5px; border: 1px solid black;">Jan 13</td>
+<td style="padding: 5px; border: 1px solid black;">Jan 14<br><br>Lecture 02 (A1)</td>
+<td style="padding: 5px; border: 1px solid black;">Jan 15</td>
+<td style="padding: 5px; border: 1px solid black;">Jan 16<br><br>Lecture 03 (A1)</td>
+</tr>
+<tr style="vertical-align: top; ">
+<td style="padding: 5px; border: 1px solid black;background-color: #F6DDCC;">Jan 19<br><br>No Class</td>
+<td style="padding: 5px; border: 1px solid black;">Jan 20</td>
+<td style="padding: 5px; border: 1px solid black;">Jan 21<br><br>Lecture 04 (A2)</td>
+<td style="padding: 5px; border: 1px solid black;">Jan 22</td>
+<td style="padding: 5px; border: 1px solid black;">Jan 23<br><br>Lecture 05 (A2)<br>Homework 1</td>
+</tr>
+<tr style="vertical-align: top; ">
+<td style="padding: 5px; border: 1px solid black;">Jan 26<br><br>Lecture 06 (A2A3)</td>
+<td style="padding: 5px; border: 1px solid black;">Jan 27</td>
+<td style="padding: 5px; border: 1px solid black;">Jan 28<br><br>Lecture 07 (A3)</td>
+<td style="padding: 5px; border: 1px solid black;">Jan 29</td>
+<td style="padding: 5px; border: 1px solid black;">Jan 30<br><br>Lecture 08 (A3)<br>Homework 2</td>
+</tr>
+<tr style="vertical-align: top; ">
+<td style="padding: 5px; border: 1px solid black;">Feb 02<br><br>Lecture 09 (A4)</td>
+<td style="padding: 5px; border: 1px solid black;">Feb 03</td>
+<td style="padding: 5px; border: 1px solid black;">Feb 04<br><br>Lecture 10 (A4)</td>
+<td style="padding: 5px; border: 1px solid black;">Feb 05</td>
+<td style="padding: 5px; border: 1px solid black;">Feb 06<br><br>Lecture 11 (A4A5)<br>Homework 3</td>
+</tr>
+<tr style="vertical-align: top; ">
+<td style="padding: 5px; border: 1px solid black;">Feb 09<br><br>Lecture 12 (A5)</td>
+<td style="padding: 5px; border: 1px solid black;">Feb 10</td>
+<td style="padding: 5px; border: 1px solid black;">Feb 11<br><br>Lecture 13 (A5)</td>
+<td style="padding: 5px; border: 1px solid black;">Feb 12</td>
+<td style="padding: 5px; border: 1px solid black;">Feb 13<br><br>Lecture 14 (B1)<br>Homework 4</td>
+</tr>
+<tr style="vertical-align: top; ">
+<td style="padding: 5px; border: 1px solid black;background-color: #F6DDCC;">Feb 16<br><br>No Class</td>
+<td style="padding: 5px; border: 1px solid black;">Feb 17</td>
+<td style="padding: 5px; border: 1px solid black;background-color: #E8DAEF;">Feb 18<br><br>Midterm A</td>
+<td style="padding: 5px; border: 1px solid black;">Feb 19</td>
+<td style="padding: 5px; border: 1px solid black;">Feb 20<br><br>Lecture 15 (B1)</td>
+</tr>
+<tr style="vertical-align: top; ">
+<td style="padding: 5px; border: 1px solid black;">Feb 23<br><br>Lecture 16 (B1)</td>
+<td style="padding: 5px; border: 1px solid black;">Feb 24</td>
+<td style="padding: 5px; border: 1px solid black;">Feb 25<br><br>Lecture 17 (nan)</td>
+<td style="padding: 5px; border: 1px solid black;">Feb 26</td>
+<td style="padding: 5px; border: 1px solid black;">Feb 27<br><br>Lecture 18 (nan)<br>Homework 5</td>
+</tr>
+<tr style="vertical-align: top; ">
+<td style="padding: 5px; border: 1px solid black;background-color: #D4E6F1;">Mar 02<br><br>Retake A</td>
+<td style="padding: 5px; border: 1px solid black;">Mar 03</td>
+<td style="padding: 5px; border: 1px solid black;">Mar 04<br><br>Lecture 19 (nan)</td>
+<td style="padding: 5px; border: 1px solid black;">Mar 05</td>
+<td style="padding: 5px; border: 1px solid black;">Mar 06<br><br>Lecture 20 (nan)<br>Homework 6</td>
+</tr>
+<tr style="vertical-align: top; ">
+<td style="padding: 5px; border: 1px solid black;">Mar 09<br><br>Lecture 21 (nan)</td>
+<td style="padding: 5px; border: 1px solid black;">Mar 10</td>
+<td style="padding: 5px; border: 1px solid black;">Mar 11<br><br>Lecture 22 (nan)</td>
+<td style="padding: 5px; border: 1px solid black;">Mar 12</td>
+<td style="padding: 5px; border: 1px solid black;">Mar 13<br><br>Lecture 23 (nan)<br>Homework 7</td>
+</tr>
+<tr style="vertical-align: top; ">
+<td style="padding: 5px; border: 1px solid black;background-color: #F6DDCC;">Mar 16<br><br>No Class</td>
+<td style="padding: 5px; border: 1px solid black;background-color: #F6DDCC;">Mar 17<br><br>No Class</td>
+<td style="padding: 5px; border: 1px solid black;background-color: #F6DDCC;">Mar 18<br><br>No Class</td>
+<td style="padding: 5px; border: 1px solid black;background-color: #F6DDCC;">Mar 19<br><br>No Class</td>
+<td style="padding: 5px; border: 1px solid black;background-color: #F6DDCC;">Mar 20<br><br>No Class</td>
+</tr>
+<tr style="vertical-align: top; ">
+<td style="padding: 5px; border: 1px solid black;background-color: #E8DAEF;">Mar 23<br><br>Midterm B</td>
+<td style="padding: 5px; border: 1px solid black;">Mar 24</td>
+<td style="padding: 5px; border: 1px solid black;">Mar 25<br><br>Lecture 24 (nan)</td>
+<td style="padding: 5px; border: 1px solid black;">Mar 26</td>
+<td style="padding: 5px; border: 1px solid black;">Mar 27<br><br>Lecture 25 (nan)<br>Homework 8</td>
+</tr>
+<tr style="vertical-align: top; ">
+<td style="padding: 5px; border: 1px solid black;">Mar 30<br><br>Lecture 26 (nan)</td>
+<td style="padding: 5px; border: 1px solid black;">Mar 31</td>
+<td style="padding: 5px; border: 1px solid black;">Apr 01<br><br>Lecture 27 (nan)</td>
+<td style="padding: 5px; border: 1px solid black;">Apr 02</td>
+<td style="padding: 5px; border: 1px solid black;">Apr 03<br><br>Lecture 28 (nan)<br>Homework 9</td>
+</tr>
+<tr style="vertical-align: top; ">
+<td style="padding: 5px; border: 1px solid black;background-color: #D4E6F1;">Apr 06<br><br>Retake AB</td>
+<td style="padding: 5px; border: 1px solid black;">Apr 07</td>
+<td style="padding: 5px; border: 1px solid black;">Apr 08<br><br>Lecture 29 (nan)</td>
+<td style="padding: 5px; border: 1px solid black;">Apr 09</td>
+<td style="padding: 5px; border: 1px solid black;">Apr 10<br><br>Lecture 30 (nan)<br>Homework 10</td>
+</tr>
+<tr style="vertical-align: top; ">
+<td style="padding: 5px; border: 1px solid black;">Apr 13<br><br>Lecture 31 (nan)</td>
+<td style="padding: 5px; border: 1px solid black;">Apr 14</td>
+<td style="padding: 5px; border: 1px solid black;">Apr 15<br><br>Lecture 32 (nan)</td>
+<td style="padding: 5px; border: 1px solid black;">Apr 16</td>
+<td style="padding: 5px; border: 1px solid black;">Apr 17<br><br>Lecture 33 (nan)<br>Homework 11</td>
+</tr>
+<tr style="vertical-align: top; ">
+<td style="padding: 5px; border: 1px solid black;background-color: #E8DAEF;">Apr 20<br><br>Midterm C</td>
+<td style="padding: 5px; border: 1px solid black;">Apr 21</td>
+<td style="padding: 5px; border: 1px solid black;">Apr 22<br><br>Lecture 34 (nan)</td>
+<td style="padding: 5px; border: 1px solid black;">Apr 23</td>
+<td style="padding: 5px; border: 1px solid black;">Apr 24<br><br>Lecture 35 (nan)</td>
+</tr>
+<tr style="vertical-align: top; ">
+<td style="padding: 5px; border: 1px solid black;">Apr 27<br><br>Lecture 36 (nan)</td>
+<td style="padding: 5px; border: 1px solid black;">Apr 28</td>
+<td style="padding: 5px; border: 1px solid black;">Apr 29<br><br>Lecture 37 (nan)</td>
+<td style="padding: 5px; border: 1px solid black;">Apr 30</td>
+<td style="padding: 5px; border: 1px solid black;background-color: #D4E6F1;">May 01<br><br>Retake ABC<br>Homework 12</td>
+</tr>
+<tr style="vertical-align: top; ">
+<td style="padding: 5px; border: 1px solid black;background-color: #F6DDCC;">May 04<br><br>No Class</td>
+<td style="padding: 5px; border: 1px solid black;background-color: #F6DDCC;">May 05<br><br>No Class</td>
+<td style="padding: 5px; border: 1px solid black;background-color: PaleGreen;">May 06<br><br>Final Exam</td>
+<td style="padding: 5px; border: 1px solid black;background-color: #F6DDCC;">May 07<br><br>No Class</td>
+<td style="padding: 5px; border: 1px solid black;background-color: #F6DDCC;">May 08<br><br>No Class</td>
+</tr>
+</table></p>
+</div>
+
+<div class="w3-container w3-padding-32" id="homeworkguidelines">
+
+  <h3 class="w3-text-teal">Homework Guidelines</h3>
+
+    <h6 class="w3-text-teal">Where do I find the homework problem list? MyOpenMath!</h6>
+  <p>
+    The problem list is found at &#9758; <a target="_blank" rel="noopener noreferrer" href="https://www.myopenmath.com/index.php">MyOpenMath</a>.
+    You will have received the CourseID and Enrollment Key by email, and can also find it in the associated Gradescope assignment.
+    On MyOpenMath you can enter answers to problems, and your answer will be automatically checked without the possibility of penalty.
+    You will not submit your assignments for grading through MyOpenMath: please read the next section.
+  </p>
+
+  <h6 class="w3-text-teal">Where do I submit homework for grading? Gradescope!</h6>
+  <p>
+  You submit your homework for credit-based grading through &#9758; <a target="_blank" rel="noopener noreferrer" href="https://www.gradescope.com">Gradescope</a>, <b>not</b> MyOpenMath.
+  You should join our Gradescope course by accessing Gradescope through &#9758; <a target="_blank" rel="noopener noreferrer" href="https://brightspace.usc.edu/">Brightspace</a>.
+  MyOpenMath is only there to provide you the problems and let you check your answers.
+  Anything submitted through MyOpenMath will <b>not</b> be considered for credit.
+</p>
+
+  <h6 class="w3-text-teal">How do I submit homework? Read on.</h6>
+  <p>Scan and upload your work either as pdfs or images through Gradescope.
+    For pdfs: you should use Gradescope to tag each page with the problems it has.
+    &#9758; <a target="_blank" rel="noopener noreferrer" href="https://guides.gradescope.com/hc/en-us/articles/21864315441677-Submitting-a-PDF-for-an-assignment">Here</a> is how.
+    For images: you should be asked to upload an image for each problem.
+    Ensure your submissions are properly oriented (e.g. not sideways).
+    Any problem that has not been assigned to a page or image will receive <b>zero</b> credit.
+  Any submission that is illegible will receive <b>zero</b> credit.</p>
+
+  <h6 class="w3-text-teal">Do I need to show work? Absolutely!</h6>
+  <p>You are graded on your work, <b>not</b> your final answers.
+    Final answers with no or very insufficient work will receive <b>zero</b> credit.
+  </p>
+
+  <p>
+    Often the MyOpenMath problems will offer <span style = "background-color:#FFF4A3">
+hints</span> with steps for you to solve: in <span style = "background-color:#FFF4A3">
+yellow boxes</span>.
+    You do <b>not</b> need to include solutions to the hints if you opted to solve the problem differently.
+  </p>
+
+  <h6 class="w3-text-teal">Can I collaborate? Within reason!</h6>
+  <p>Collaboration is encouraged. Copying the work of others is not.
+    If in doubt: you should be able to recreate your solution to the problem if spontaneously put on the spot.
+    External resources are allowed, but your intention should not be to simply locate solutions.
+  </p>
+
+  <!--[226sp26]
+   <h6 class="w3-text-teal">How is homework graded?</h6>
+  <p>4 problems will be randomly selected from each assignment, and those same problems will be graded out of 2 points on Gradescope for each student.
+    Therefore each homework is out of 8 points.
+    The possible scores on a problem are 0, 1, 1.5, or 2. 
+    A 1.5 is assigned if your answer is almost, but not quite, correct, in which case you will have the opportunity to submit a regrade request through Gradescope in which would explain your error and how you would fix it, following which your score would be rounded up to a 2.
+    This option of having your score rounded up is reserved only for scores of 1.5.
+    Regrade requests will be due about one-and-a-half weeks after the original homework due date, except for the final homework, for which regrade requests will be due a little less than a week after the homework.
+  </p>
+  [226sp26]-->
+
+  
+   <h6 class="w3-text-teal">How is homework graded?</h6>
+  <p>2 problems will be randomly selected from each assignment, and those same problems will be graded out of 3 points on Gradescope for each student.
+    Therefore each homework is out of 6 points.
+    Regrade requests will be due about one-and-a-half weeks after the original homework due date, except for the final homework, for which regrade requests will be due a little less than a week after the homework.
+  </p>
+  
+
+  <h6 class="w3-text-teal">What impact does homework have on my final grade?</h6>
+  <p>Homework is worth 15% of your final grade.
+    Your lowest 2 homework scores will be dropped.
+  </p>
+
+  <!--[226sp26]
+  <h6 class="w3-text-teal">Can I submit late homework?</h6>
+  <p>Late homework will be accepted with a total deduction of 0.1 points (out of 8) if submitted by Sat at 2am, of 0.5 points if submitted by Sat at 5pm, of 1 point if submitted by the end of Saturday, of 1.5 points if submitted by Sun at 5pm, and of 2 points if submitted by the end of Sun. 
+    Homework will not be accepted after that Sunday. 
+    No exceptions are given. 
+  </p>
+  [226sp26]-->
+
+  
+  <h6 class="w3-text-teal">Can I submit late homework?</h6>
+  <p>Late homework will be accepted with a total deduction of 0.1 points (out of 6) if submitted by Sat at 2am, of 0.2 points if submitted by Sat at 5pm, of 0.5 points if submitted by the end of Saturday, of 0.7 points if submitted by Sun at 5pm, and of 1 points if submitted by the end of Sun. 
+    Homework will not be accepted after that Sunday. 
+    No exceptions are given. 
+  </p>
+  
+
+</div>
+
+<div class="w3-container w3-padding-32" id="syllabus">
+  <h3 class="w3-text-teal">Syllabus</h3>
+  <p><em>The content of this syllabus is subject to change.</em></p>
+
+  <p><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: left;">
+      <th>Section</th>
+      <th>Time</th>
+      <th>Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>39625</td>
+      <td>11-11:50am</td>
+      <td>DMC 156</td>
+    </tr>
+    <tr>
+      <td>39992</td>
+      <td>1-1:350pm</td>
+      <td>THH 114</td>
+    </tr>
+  </tbody>
+</table></p>
+
+  <h5 class="w3-text-teal">Course Materials</h5>
+  <p>The textbook is recommended but not required.</p>
+  <p><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: left;">
+      <th>Textbook</th>
+      <th>Author</th>
+      <th>Edition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>First Course In Probability</td>
+      <td>Sheldon Ross</td>
+      <td>10th</td>
+    </tr>
+  </tbody>
+</table></p>
+
+
+  <h5 class="w3-text-teal">Course Structure</h5>
+  <p>This course is broken up into Unit A, Unit B, and Unit C. Each unit consists of 5 topics. For a total of 15 topics. There is also a topic that is exclusive to the final.</p>
+  <p><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: left;">
+      <th>Topic</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A1</td>
+      <td>Counting</td>
+      <td>Count combinations and permutations. Use binomial and multinomial coefficients. Use stars and bars. Apply to word problems.</td>
+    </tr>
+    <tr>
+      <td>A2</td>
+      <td>Axioms of Probability</td>
+      <td>Use the axioms of probability. Use the inclusion exclusion principle. Apply to word problems.</td>
+    </tr>
+    <tr>
+      <td>A3</td>
+      <td>Conditional Probability</td>
+      <td>Compute conditional probability. Assess and use independence of events. Use the multiplication rule. Use the law of total probability. Use Bayes's formula. Apply to word problems.</td>
+    </tr>
+    <tr>
+      <td>A4</td>
+      <td>Discrete Random Variables</td>
+      <td>Compute probabilities and conditional probabilities involving discrete random variables including the following. Binomial random variable. Poisson random variable. Geometric random variable. Apply to word problems.</td>
+    </tr>
+    <tr>
+      <td>A5</td>
+      <td>Expectation and Variance</td>
+      <td>Compute expected value and variance and covariance of discrete random variables. Use properties of expected value and variance. Apply to word problems.</td>
+    </tr>
+    <tr>
+      <td>B1</td>
+      <td>Continuous Random Variables</td>
+      <td>Calculate probability and expectation and variance of continuous random variables. Do so in the context of uniform and normal random variables. Use normal random variables as approximations for binomial random variables.</td>
+    </tr>
+    <tr>
+      <td>B2</td>
+      <td>Special Continuous Random Variables</td>
+      <td>Calculate probabilities involving exponential distributions and gamma distributions and Cauchy distributions and gamma distributions. Decide when one of these distributions is most appropriate.</td>
+    </tr>
+    <tr>
+      <td>B3</td>
+      <td>Joint Distributions</td>
+      <td>Use joint distributions and to calculate probabilites and probability density functions. Compute expected values, variances, and covariances, given joint density functions.</td>
+    </tr>
+    <tr>
+      <td>B4</td>
+      <td>Joint + Conditional Probability</td>
+      <td>Use convolutions to compute probabilities of sums of independent variables. Use conditional density functions to compute conditional probability.</td>
+    </tr>
+    <tr>
+      <td>B5</td>
+      <td>Joint + Jacobians</td>
+      <td>Use the Jacobian to find joint density functions of functions of random variables. Calculate probability and expected values in these situations.</td>
+    </tr>
+    <tr>
+      <td>C1</td>
+      <td>Joint + Expectation and Covariance</td>
+      <td>Use joint distributions to compute expected value and variance and covariance and correlation. Use properties of expected value and variance. Use indicators functions to compute expected value.</td>
+    </tr>
+    <tr>
+      <td>C2</td>
+      <td>Joint + Conditional Expectation</td>
+      <td>Use joint distributions to compute conditional expectation/variance. Use properties of conditional expectation/variance.</td>
+    </tr>
+    <tr>
+      <td>C3</td>
+      <td>Moments</td>
+      <td>Calculate moments using expected values of binomials. Find moment generating functions and use them to calculate moments.</td>
+    </tr>
+    <tr>
+      <td>C4</td>
+      <td>Limit Theorems</td>
+      <td>Apply bounds including the Markov inequality and the Chebyshev inequality and the Chernoff bounds. Apply the weak and strong laws of large numbers. Apply the Central Limit Theorem.</td>
+    </tr>
+    <tr>
+      <td>C5</td>
+      <td>Poison Processes</td>
+      <td>Calculate probabilities and expected values involving arrival times and arrival counts in Poisson processes. Apply the principles of superpposition and thinning.</td>
+    </tr>
+    <tr>
+      <td>Final Only</td>
+      <td>Markov Chains</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table></p>
+  See the &#9758; <a href = "#dailyschedule">Daily Schedule</a> for a day-by-day breakdown of our progression through the units.
+
+
+  <p>Grading is broken up into Homework,<!--[Matlab] Simulations,[Matlab]--> Topic Mastery, and the Final Exam.</p>
+  <table class="dataframe">
+    <thead>
+      <tr style="text-align: left;">
+        <th>Category</th>
+        <th>Weight Total</th>
+        <th>Quantity of Items in Category</th>
+        <th>Weight Per Item</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Homework</td>
+        <td>15%</td>
+        <td>[12 HWs - lowest 2 dropped] = [10 counted HWs]</td>
+        <td>1.5% per non-dropped HW </td>
+      </tr>
+      <!--[Matlab]<tr>
+        <td>Matlab Simulations</td>
+        <td>[matlabweight]%</td>
+        <td>5 Matlab Assignments</td>
+        <td>[weightpermatlab]% per assignment</td>
+      [Matlab]-->
+        <tr>
+          <td>Topic Mastery</td>
+          <td>60%</td>
+          <td>15 topics </td>
+          <td>4% per topic </td>
+        </tr>
+      <tr>
+        <td>Final Exam</td>
+        <td>25%</td>
+        <td>1 exam </td>
+        <td>25%</td>
+      </tr>
+  </tbody>
+  </table>
+
+  <h5 class="w3-text-teal">Homework</h5>
+  <p>Homework will be due Fridays at 11:59pm, with a few exceptions. See the &#9758; <a href="#dailyschedule">Daily Schedule</a> for details.</p>
+
+  <p><b>Homework Guidelines.</b> Please see the &#9758; <a href="#homeworkguidelines">Homework Guidelines</a> tab.</p>
+
+  <p><b>Contribution to Final Grade.</b> Homework counts for 15% of your final grade.
+  Your lowest 2 homework grades will be dropped.
+ </p>
+
+ <!--[Matlab]<h5 class="w3-text-teal" id="simulations">Matlab Simulations</h5>
+  <p>5 Matlab Simulation assignments will be assigned irregularly throughout the semester and alwasy due on Tuesdays.
+    See the &#9758; <a href = "#dailyschedule">Daily Schedule</a> for due dates.
+    Matlab will not be taught in lecture, but rather the key ideas will be introduced in companions to each assignment.
+    You will complete each problem in a .m file, and will select <b>Publish as PDF</b> and then submit the resulting PDFs to Gradescope.
+  </p>
+
+  <p>Late Simulation assignments will be accepted with a total deduction of 0.1 points (out of 5) if submitted by Wed at 2am, of 0.5 points if submitted by Wed at 5pm, and of 1 point if submitted by the end of Wednesday.
+    Simulation assignments will not be accepted after that Wednesday. 
+    No exceptions are given. 
+  </p>
+
+  <p><b>Contribution to Final Grade.</b> Matlab counts for [matlabweight]% of your final grade.
+ </p>[Matlab]-->
+
+  <h5 class="w3-text-teal">Topic Mastery</h5>
+  <p>There are 15 topics (A1-A5, B1-B5, C1-C5) which were listed earlier in the syllabus.</p>
+
+  <p><b>Individual Topic Grading.</b> Each topic is graded out of 4 points. 4 points indicates mastery.
+  Topic grading will be assessed using Midterms and Retakes. </p>
+
+  <p><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: left;">
+      <th>Date</th>
+      <th>Assessment</th>
+      <th>Time</th>
+      <th>Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wed 2/18/26</td>
+      <td>Midterm A</td>
+      <td>Your Lecture Time</td>
+      <td>Your Lecture Classroom</td>
+    </tr>
+    <tr>
+      <td>Mon 3/2/26</td>
+      <td>Retake &#8804;A</td>
+      <td>Your Lecture Time</td>
+      <td>Your Lecture Classroom</td>
+    </tr>
+    <tr>
+      <td>Mon 3/23/26</td>
+      <td>Midterm B</td>
+      <td>Your Lecture Time</td>
+      <td>Your Lecture Classroom</td>
+    </tr>
+    <tr>
+      <td>Mon 4/6/26</td>
+      <td>Retake &#8804;B</td>
+      <td>Your Lecture Time</td>
+      <td>Your Lecture Classroom</td>
+    </tr>
+    <tr>
+      <td>Mon 4/20/26</td>
+      <td>Midterm C</td>
+      <td>Your Lecture Time</td>
+      <td>Your Lecture Classroom</td>
+    </tr>
+    <tr>
+      <td>Fri 5/1/26</td>
+      <td>Retake &#8804;C</td>
+      <td>Your Lecture Time</td>
+      <td>Your Lecture Classroom</td>
+    </tr>
+  </tbody>
+</table></p>
+
+  <p>Each Midterm is tied to a unit and will have a single problem (with parts) for each each topic in that unit.
+  For example Midterm A is tied to Unit A and will have A1, A2, A3, A4, and A5 problems.
+  Each problem will be graded out of 4 points, indicating your score on that topic.</p>
+
+  <p>Each Retake is tied to all units up to that point and will have a single problem (with parts) for each topic in that unit.
+  For example Retake &#8804;B is tied to Unit A and Unit B and will have A1, A2, ..., A5, B1, B2, ..., B5 problems.
+  Each problem will be graded out of 4 points, indicating your score on that topic.</p>
+
+  <p>Your final score on a topic will be the maximum of your scores on each assessment.
+  For example if your scores on A3 were [A3 on Midterm A: 1 points] and [A3 on Retake &#8804;A: 2 points] and [A3 on Retake &#8804;B: 3 points] and [A3 on Retake &#8804;C: 2 points] then your final score on A3 would be 3 points, as this was the maximum of your scores.
+  Note that this means, if you ever score 4 points on a topic in an assessment, then you are effectively done with that topic, at least until the final exam.
+
+  <p><b>Midterm and Retake Guidelines.</b> 
+    Calculators are <b>not</b> allowed on any Midterms or Retakes. 
+    Notes are <b>not</b> allowed on any Midterms or Retakes.
+    You will be provided a &#9758; <a href="formulasheet.pdf" target="_blank" rel="noopener">formula sheet</a> however.
+  </p>
+
+  <p><b>Midterm/Retake Absences.</b> 
+    Exams must be taken in--person on the specified day.
+    No exceptions are given, except for Midterm C which occurs during the week of Thanksgiving, which you may opt to take on the Friday before Thanksgiving instead, still in--person.
+    </p>
+    <p>
+    Otherwise, if you miss a midterm/retake for a valid and documented reason (e.g. sickness with a note from your doctor), then after the final exam has been graded, you may select up to 3 topics that appear on <b>both</b> that midterm/retake <b>and</b> on the final exam and, for each, replace your missing topic score on that midterm/retake with a substitute score from the final exam.
+    Note that certain topics may not appear on the final exam, but you will not know which until the final exam has occurred.
+    If you miss multiple midterms/retakes, the maximum total number of substitute scores from the final exam you can use is 5.</p>
+
+  <p><b>Regrade Requests.</b> If you believe an error has been made in grading, a regrade request can be submitted through Gradescope.
+    Regrade requests are due about one-and-a-half weeks after each assessment, except for Retake ABC, in which case the regrades will be due a little less than one week after the assessment.  </p>
+
+  <p><b>Contribution to Final Grade.</b> Topic Mastery counts for 60% of your final grade.
+  Therefore each topic contributes 4% to your final grade.</p>
+
+  <h5 class="w3-text-teal">Final Exam</h5>
+  <p>Our sections will have a unique final exam not shared by other instructors.</p>
+
+  <p><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: left;">
+      <th>Date</th>
+      <th>Time</th>
+      <th>Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>11am Section: Wed Dec 17</td>
+      <td>11am-1pm</td>
+      <td>usual classroom</td>
+    </tr>
+    <tr>
+      <td>1pm Section: Wed Dec 17</td>
+      <td>2-4pm</td>
+      <td>usual classroom</td>
+    </tr>
+  </tbody>
+</table></p>
+
+  It is university policy that no student may take this exam early or be allowed to skip it. 
+  If you miss the final exam (and were in a position to pass the course prior to taking the final exam) then your only option is to take an "Incomplete" and take the final exam next semester.
+
+  <p><b>Final Exam Guidelines.</b> Calculators are <b>not</b> allowed on any Midterms or Retakes. 
+    You will be provided a &#9758; <a href="formulasheet.pdf" target="_blank" rel="noopener">formula sheet</a> for the final exam, and are not allowed other notes.
+  </p>
+
+  <h5 class="w3-text-teal">Discussion Section</h5>
+  <p><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: left;">
+      <th>Section</th>
+      <th>TA</th>
+      <th>Time</th>
+      <th>Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>39626</td>
+      <td>Alex Fu</td>
+      <td>Tu 12-12:50pm</td>
+      <td>KAP 167</td>
+    </tr>
+    <tr>
+      <td>39627</td>
+      <td>Alex Fu</td>
+      <td>Tu 1-1:50pm</td>
+      <td>KAP 167</td>
+    </tr>
+    <tr>
+      <td>39993</td>
+      <td>Alex Clay</td>
+      <td>Tu 2-2:50pm</td>
+      <td>THH B10</td>
+    </tr>
+    <tr>
+      <td>39994</td>
+      <td>Alex Clay</td>
+      <td>Tu 3-3:50pm</td>
+      <td>THH B11</td>
+    </tr>
+  </tbody>
+</table></p>
+  <p><strong>Attending and participating in discussion section is essential for success in the course.</strong></p>
+  <p>In discussion section you will have the opportunity to work through additional problems related to the topics with the help of the TAs.
+  You will find these problems posted on &#9758; <a target="_blank" rel="noopener noreferrer" href="https://www.myopenmath.com/index.php">MyOpenMath</a>.
+  This will also be an opportunity for you to receive help on other assignments from your TA.
+  You will also take your retakes in discussion section.</p>
+
+  <!-- <p><span style="color: #ba372a; font-size: 16pt;">Extra Credit</span></p>
+  <p>There is one extra credit service opportunity for this course, <a href="https://dornsife.usc.edu/joint-educational-project/">JEP</a> (Joint Educational Project).
+  Satisfactory completion receives one 1/3 grade credit (e.g. A- to A).
+  No other extra credit will be approved.</p> -->
+
+  <h5 class="w3-text-teal">Office Hours</h5>
+  <p>These are an essential resource that often go underutilized.
+  We encourage you to attend them to receive help on any aspect of the course. Find them in the &#9758; <a href="#officehours">Office Hours</a> tab.</p>
+
+  <h5 class="w3-text-teal">Math Center</h5>
+  <p>The &#9758; <a target="_blank" rel="noopener noreferrer" href="https://dornsife.usc.edu/mathcenter/">USC Math Center</a> (KAP 263) is a place to go if you want help with your math classes.
+    It is open during regular business hours and is always stocked with graduate students who can assist you with your mathematics classes.
+  </p>
+
+  <h5 class="w3-text-teal">Academic Integrity</h5>
+  <p>The University of Southern California is foremost a learning community committed to fostering successful scholars and researchers dedicated to the pursuit of knowledge and the transmission of ideas.
+  Academic misconduct is in contrast to the university's mission to educate students through a broad array of first-rank academic, professional, and extracurricular programs and includes any act of dishonesty in the submission of academic work (either in draft or final form).</p>
+  <p>This course will follow the expectations for academic integrity as stated in the <a target="_blank" rel="noopener noreferrer" href="https://policy.usc.edu/studenthandbook/">USC Student Handbook</a>.
+  All students are expected to submit assignments that are original work and prepared specifically for the course/section in this academic term.
+  You may not submit work written by others or "recycle" work prepared for other courses without obtaining written permission from the instructor(s).
+  Students suspected of engaging in academic misconduct will be reported to the Office of Academic Integrity.</p>
+  <p>Other violations of academic misconduct include, but are not limited to, cheating, plagiarism, fabrication (e.g., falsifying data), knowingly assisting others in acts of academic dishonesty, and any act that gains or is intended to gain an unfair academic advantage.</p>
+  <p>The impact of academic dishonesty is far-reaching and is considered a serious offense against the university and could result in outcomes such as failure on the assignment, failure in the course, suspension, or even expulsion from the university.</p>
+  <p>For more information about academic integrity see the <a target="_blank" rel="noopener noreferrer" href="https://policy.usc.edu/studenthandbook/">student handbook</a> or the <a target="_blank" rel="noopener noreferrer" href="https://academicintegrity.usc.edu/">Office of Academic Integrity's website</a>, and university policies on <a href="https://policy.usc.edu/research-and-scholarship-misconduct/">Research and Scholarship Misconduct</a>.</p>
+  <p></p>
+
+  <h5 class="w3-text-teal">Course Content Distribution and Recording Policies</h5>
+  <p>USC has policies that prohibit recording and distribution of any synchronous and asynchronous course content outside of the learning environment.</p>
+  <p>Recording a university class without the express permission of the instructor and announcement to the class, or unless conducted pursuant to an Office of Student Accessibility Services (OSAS) accommodation.
+  Recording can inhibit free discussion in the future, and thus infringe on the academic freedom of other students as well as the instructor.
+  (<a target="_blank" rel="noopener noreferrer" href="https://policy.usc.edu/studenthandbook/">Living our Unifying Values: The USC Student Handbook</a>, page 13).</p>
+  <p>Distribution or use of notes, recordings, exams, or other intellectual property, based on university classes or lectures without the express permission of the instructor for purposes other than individual or group study. This includes but is not limited to providing materials for distribution by services publishing course materials. This restriction on unauthorized use also applies to all information, which had been distributed to students or in any way had been displayed for use in relationship to the class, whether obtained in class, via email, on the internet, or via any other media. (<a href="https://policy.usc.edu/studenthandbook/">Living our Unifying Values: The USC Student Handbook</a>, page 13).</p>
+
+  <h5 class="w3-text-teal">Students and Disability Accommodations</h5>
+  <p>USC welcomes students with disabilities into all of the University&rsquo;s educational programs.<a target="_blank" rel="noopener noreferrer" href="https://osas.usc.edu/">The Office of Student Accessibility Services</a> (OSAS) is responsible for the determination of appropriate accommodations for students who encounter disability-related barriers. Once a student has completed the OSAS process (registration, initial appointment, and submitted documentation) and accommodations are determined to be reasonable and appropriate, a Letter of Accommodation (LOA) will be available to generate for each course. The LOA must be given to each course instructor by the student and followed up with a discussion.
+  This should be done as early in the semester as possible as accommodations are not retroactive.
+  More information can be found at <a target="_blank" rel="noopener noreferrer" href="http://osas.usc.edu/">osas.usc.edu</a>.
+  You may contact OSAS at (213) 740-0776 or via email at <a target="_blank" rel="noopener noreferrer" href="mailto:osasfrontdesk@usc.edu">osasfrontdesk@usc.edu</a>.</p>
+
+  <h5 class="w3-text-teal">Support Systems</h5>
+  <p>&#9758; <a target="_blank" rel="noopener noreferrer" href="http://sites.google.com/usc.edu/counseling-mental-health"><i>Counseling and Mental Health</i></a><i> - (213) 740-9355 24/7 on call</i></p>
+  <p>Free and confidential mental health treatment for students, including short-term psychotherapy, group counseling, stress fitness workshops, and crisis intervention.</p>
+  <p>&#9758; <a target="_blank" rel="noopener noreferrer" href="http://988lifeline.org/"><i>988 Suicide and Crisis Lifeline</i></a><i> - 988 for both calls and text messages 24/7 on call</i></p>
+  <p>The 988 Suicide and Crisis Lifeline (formerly known as the National Suicide Prevention Lifeline) provides free and confidential emotional support to people in suicidal crisis or emotional distress 24 hours a day, 7 days a week, across the United States. The Lifeline is comprised of a national network of over 200 local crisis centers, combining custom local care and resources with national standards and best practices. The new, shorter phone number makes it easier for people to remember and access mental health crisis services (though the previous 1 (800) 273-8255 number will continue to function indefinitely) and represents a continued commitment to those in crisis.</p>
+  <p>&#9758; <a target="_blank" rel="noopener noreferrer" href="http://sites.google.com/usc.edu/rsvpclientservices/home"><i>Relationship and Sexual Violence Prevention Services (RSVP)</i></a><i> - (213) 740-9355 (WELL) &ndash; 24/7 on call</i></p>
+  <p>Free and confidential therapy services, workshops, and training for situations related to gender- and power-based harm (including sexual assault, intimate partner violence, and stalking).</p>
+  <p>&#9758; <a target="_blank" rel="noopener noreferrer" href="http://eeotix.usc.edu/"><i>Office for Equity, Equal Opportunity, and Title IX (EEO-TIX)</i></a><i> - (213) 740-5086</i></p>
+  <p>Information about how to get help or help someone affected by harassment or discrimination, rights of protected classes, reporting options, and additional resources for students, faculty, staff, visitors, and applicants.</p>
+  <p>&#9758; <a target="_blank" rel="noopener noreferrer" href="http://usc-advocate.symplicity.com/care_report"><i>Reporting Incidents of Bias or Harassment</i></a><i> - (213) 740-5086 or (213) 821-8298</i></p>
+  <p>Avenue to report incidents of bias, hate crimes, and microaggressions to the Office for Equity, Equal Opportunity, and Title for appropriate investigation, supportive measures, and response.</p>
+  <p>&#9758; <a target="_blank" rel="noopener noreferrer" href="http://osas.usc.edu/"><i>The Office of Student Accessibility Services (OSAS)</i></a><i> - (213) 740-0776</i></p>
+  <p>OSAS ensures equal access for students with disabilities through providing academic accommodations and auxiliary aids in accordance with federal laws and university policy.</p>
+  <p>&#9758; <a target="_blank" rel="noopener noreferrer" href="http://campussupport.usc.edu/"><i>USC Campus Support and Intervention</i></a><i> - (213) 740-0411</i></p>
+  <p>Assists students and families in resolving complex personal, financial, and academic issues adversely affecting their success as a student.</p>
+  <p>&#9758; <a target="_blank" rel="noopener noreferrer" href="http://diversity.usc.edu/"><i>Diversity, Equity and Inclusion</i></a><i> - (213) 740-2101</i></p>
+  <p>Information on events, programs and training, the Provost&rsquo;s Diversity and Inclusion Council, Diversity Liaisons for each academic school, chronology, participation, and various resources for students.</p>
+  <p>&#9758; <a target="_blank" rel="noopener noreferrer" href="https://emergency.usc.edu/"><i>USC Emergency</i></a><i> - UPC: (213) 740-4321, HSC: (323) 442-1000 – 24/7 on call</i></p>
+  <p>Emergency assistance and avenue to report a crime. Latest updates regarding safety, including ways in which instruction will be continued if an officially declared emergency makes travel to campus infeasible.</p>
+  <p>&#9758; <a target="_blank" rel="noopener noreferrer" href="https://dps.usc.edu/"><i>USC Department of Public Safety</i></a><i> - UPC: (213) 740-6000, HSC: (323) 442-1200 – 24/7 on call</i></p>
+  <p>Non-emergency assistance or information.</p>
+  <p>&#9758; <a target="_blank" rel="noopener noreferrer" href="http://ombuds.usc.edu/"><i>Office of the Ombuds</i></a><i> - (213) 821-9556 (UPC) / (323) 442-0382 (HSC)</i></p>
+  <p>A safe and confidential place to share your USC-related issues with a University Ombuds who will work with you to explore options or paths to manage your concern.</p>
+  <p>&#9758; <a target="_blank" rel="noopener noreferrer" href="http://chan.usc.edu/patient-care/faculty-practice"><i>Occupational Therapy Faculty Practice </i></a><i> - (323) 442-2850 or </i><a href="mailto:otfp@med.usc.edu">otfp@med.usc.edu</a></p>
+  <p>Confidential Lifestyle Redesign services for USC students to support health promoting habits and routines that enhance quality of life and academic performance.</p>
+
+
+</div>
+</div>
+
+<footer id="myFooter">
+  <div class="w3-container w3-theme-l2 w3-padding-32", style = "font-size:15px">
+      &#9906; KAP 244A @ USC
+      geske (at) usc (dot) edu
+  </div>
+
+  <div class="w3-container w3-theme-l1", style = "font-size:12px">
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </div>
+</footer>
+
+<!-- END MAIN -->
+</div>
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
